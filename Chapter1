@@ -1,0 +1,20 @@
+1.1)
+python활용 - (수치계산, 통계처리)넘파이NumPy 사이파이SciPy
+						 (답러닝 프레임워크) 카페Caffe 텐서플로TensorFlow 체이너Chainer 테아노Theamo...
+사용하는 외부 라이브러리 - 넘파이 #수치 계산용 라이브러리
+												matplotlib #그래프 그리는 라이브러리
+아나콘다 Anaconda #데이터 분석에 중점을 둔 배포판(사용자가 설치를 한 번에 수행할 수 있도록 필요한 라이브러리 등을 하나로 정래해둔 것)
+
+
+python --version #설치된 파이썬 버전 출력
+파이썬 '대화 모드' #개발자와 파이썬이 대화하듯 프로그래밍
+
+자료형 type()
+type(10) <class 'int'>
+type(2.718) <class 'float'>
+type("hello") <class 'str'>
+
+변수
+x=10
+print(x)
+#파이썬 동적언어 - 변수의 자료형을 상황에 맞게 자동으로 결정
