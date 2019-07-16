@@ -6,7 +6,7 @@ python활용 - (수치계산, 통계처리)넘파이NumPy 사이파이SciPy
 아나콘다 Anaconda #데이터 분석에 중점을 둔 배포판(사용자가 설치를 한 번에 수행할 수 있도록 필요한 라이브러리 등을 하나로 정래해둔 것)
 
 
-python --version #설치된 파이썬 버전 출력
+$python --version #설치된 파이썬 버전 출력
 파이썬 '대화 모드' #개발자와 파이썬이 대화하듯 프로그래밍
 
 자료형 type()
@@ -18,3 +18,79 @@ type("hello") <class 'str'>
 x=10
 print(x)
 #파이썬 동적언어 - 변수의 자료형을 상황에 맞게 자동으로 결정
+
+
+리스트
+a=[1,2,3,4,5]
+print(a)
+len(a) #5 리스트의 길이 출력
+a[4]=99 #값대입
+
+#슬라이싱
+a[0:2] //[1,2]
+a[1:] //[2,3,4,99]
+a[:-1] //[1,2,3,4] #처음부터 마지막 원소의 1개 앞까지 얻기
+
+
+딕셔너리 - 키key : 값value
+me ={'height':180}
+me['height'] //180
+me['weight']=70 #새 원소 추가
+print(me) //{'weight':70, 'height':180}
+
+
+bool - 참거짓 and, or, not연산자 사용가능
+hungry = True
+sleepy = False
+not hungry //False
+hungry and sleepy //False
+hungry or sleepy //True
+
+
+if문
+if hungry:
+        print("Yes")
+else:
+        print("No")
+
+for문
+for i in[1,2,3]:
+        print(i)
+        
+        
+함수function
+def hello():
+        print("Hello World!")
+hello() //Hello World!
+
+*파이썬 인터프리터 종료 : Ctrl+D  Ctrl+Z+Enter
+
+파일로 저장
+$cd ~/deep-learning-from-scratch #디렉터리로 이동
+$python file.py
+
+클래스class - 개발자가 직접 독자적인 자료형 만듦
+class 클래스 이름:
+        def __init__(self, 인수, ...): #생성자 #클래스를 초기화
+                .....
+        def 메서드이름1(self, 인수, ...):
+                .....
+$cd man.py                
+class Man:
+        def __init__(self, name):
+                self.name = name        #항상 이름으로 받을 것임! #한번만 불림
+                print("Initialized!")
+        def hello(self):
+                print("Hello " + self.name + "!")
+        def goodbye(self):
+                print("Good-bye " + self.name + "!")
+
+m = Man("David")
+m.hello()
+m.goodbye()
+
+
+$python man.py
+Initialized!
+Hello David!
+Good-bye David!
