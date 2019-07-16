@@ -1,0 +1,24 @@
+외부 라이브러리로부터 넘파이 가져오기
+import numpy as np #numpy를 np라는 이름으로 가져와라
+
+넘파이 배열
+x = np.array([1.0,2.0,3.0])
+print(x) //[1. 2. 3.]
+type(x)  //<class 'numpy.ndarray'> #np.array()는 파이썬의 리스트를 인수로 받아 특수한 형태의 배열 numpy.ndarray를 반환
+
+넘파이 산술연산 **배열 원소의 수가 맞아야함
+x = np.array([1.0,2.0,3.0])
+y = np.array([2.0,4.0,6.0])
+x+y //array([3., 6., 9.])
+
+N차원 배열
+A = np.array([[1,2], [3,4]])
+print(A)
+//[[1 2]
+    3 4]]
+A.shape // (2, 2)
+A.dtype // dtype('int64')
+
+브로드캐스트 #형상이 다른 배열끼리 계산
+x / 2.0 //array([0.5, 1., 1.5])
+[2*2]*[2*1] -> [2*2]*[2*2]
